@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kişisel Web Sitesi</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="hero">
+    <header id="hero">
         <nav>
+            <div class="logo">[İsim]</div>
             <ul>
                 <li><a href="#about">Hakkımda</a></li>
                 <li><a href="#hobbies">Hobilerim</a></li>
@@ -18,56 +20,65 @@
         </nav>
         <div class="hero-content">
             <h1>Merhaba, Ben [İsminiz]</h1>
-            <p>Kişisel Web Siteme Hoş Geldiniz</p>
+            <p>Hayatımı, tutkularımı ve hayallerimi keşfedin.</p>
+            <a href="#about" class="btn">Daha Fazla Öğren</a>
         </div>
     </header>
 
     <section id="about" class="section">
-        <h2>Hakkımda</h2>
-        <p>Ben [İsminiz]. [Kısa bir biyografi buraya yazılacak]</p>
+        <div class="container">
+            <h2>Hakkımda</h2>
+            <p>Ben [İsminiz]. [Kısa bir biyografi buraya yazılacak]</p>
+        </div>
     </section>
 
-    <section id="hobbies" class="section">
-        <h2>Hobilerim</h2>
-        <div class="hobby-grid">
-            <div class="hobby-item">
-                <h3>Hobi 1</h3>
-                <img src="images/hobi1.jpg" alt="Hobi 1">
-                <p>Bu hobi hakkında açıklama.</p>
+    <section id="hobbies" class="section bg-light">
+        <div class="container">
+            <h2>Hobilerim</h2>
+            <div class="hobby-grid">
+                <div class="hobby-item">
+                    <h3>Hobi 1</h3>
+                    <img src="images/hobi1.jpg" alt="Hobi 1">
+                    <p>Bu hobi hakkında açıklama.</p>
+                </div>
+                <div class="hobby-item">
+                    <h3>Hobi 2</h3>
+                    <img src="images/hobi2.jpg" alt="Hobi 2">
+                    <p>Bu hobi hakkında açıklama.</p>
+                </div>
+                <!-- Daha fazla hobi ekleyebilirsiniz -->
             </div>
-            <div class="hobby-item">
-                <h3>Hobi 2</h3>
-                <img src="images/hobi2.jpg" alt="Hobi 2">
-                <p>Bu hobi hakkında açıklama.</p>
-            </div>
-            <!-- Daha fazla hobi ekleyebilirsiniz -->
         </div>
     </section>
 
     <section id="travel" class="section">
-        <h2>Gezdiğim Yerler</h2>
-        <div class="travel-grid">
-            <div class="travel-item">
-                <h3>Yer 1</h3>
-                <img src="images/yer1.jpg" alt="Yer 1">
-                <p>Bu yer hakkında açıklama.</p>
+        <div class="container">
+            <h2>Gezdiğim Yerler</h2>
+            <div class="travel-grid">
+                <div class="travel-item">
+                    <h3>Yer 1</h3>
+                    <img src="images/yer1.jpg" alt="Yer 1">
+                    <p>Bu yer hakkında açıklama.</p>
+                </div>
+                <div class="travel-item">
+                    <h3>Yer 2</h3>
+                    <img src="images/yer2.jpg" alt="Yer 2">
+                    <p>Bu yer hakkında açıklama.</p>
+                </div>
+                <!-- Daha fazla gezdiğiniz yer ekleyebilirsiniz -->
             </div>
-            <div class="travel-item">
-                <h3>Yer 2</h3>
-                <img src="images/yer2.jpg" alt="Yer 2">
-                <p>Bu yer hakkında açıklama.</p>
-            </div>
-            <!-- Daha fazla gezdiğiniz yer ekleyebilirsiniz -->
         </div>
     </section>
 
-    <section id="wishlist" class="section">
-        <h2>Gitmek İstediğim Yerler</h2>
-        <ul>
-            <li>Yer 1 - Bu yeri neden görmek istediğinizin açıklaması.</li>
-            <li>Yer 2 - Bu yeri neden görmek istediğinizin açıklaması.</li>
-            <!-- Daha fazla gitmek istediğiniz yer ekleyebilirsiniz -->
-        </ul>
+    <section id="wishlist" class="section bg-light">
+        <div class="container">
+            <h2>Gitmek İstediğim Yerler</h2>
+            <ul>
+                <li>Yer 1 - Bu yeri neden görmek istediğinizin açıklaması.</li>
+                <li>Yer 2 - Bu yeri neden görmek istediğinizin açıklaması.</li>
+                <!-- Daha fazla gitmek istediğiniz yer ekleyebilirsiniz -->
+            </ul>
+        </div>
     </section>
 
     <footer>
